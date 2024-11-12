@@ -58,7 +58,7 @@ app.get(`/shoes`, (req, res) => {
   if (maxPrice) {
     filterShoes = filterShoes.filter((shoe) => shoe.price <= maxPrice);
   }
-  let response = `<h2>Filtered Shoes:<h2><ol>`;
+  let response = `<h2>Filtered Shoes:<h2><ol>`; //Chat-GPT
   filterShoes.forEach((shoe) => {
     response += `<li><strong>Name:<strong> ${shoe.name}, <strong>Price:<strong> ${shoe.price}, <strong>Type:<strong> ${shoe.type}`;
   });
